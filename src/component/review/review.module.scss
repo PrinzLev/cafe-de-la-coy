@@ -1,0 +1,21 @@
+.reviewContainer {
+  width: 100%;
+  height: 400px;
+  color: #222831;
+  text-align: center;
+  font-family: "Libre Baskerville";
+  padding: 0;
+  background-image: linear-gradient(180deg, #a6a9b6, #fff);
+  margin-top: 100px;
+  h1 {
+    font-size: 3rem;
+  }
+  img {
+    width: 250px;
+    height: auto;
+  }
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}

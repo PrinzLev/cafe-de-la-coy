@@ -1,0 +1,54 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(-180deg, #c05555, #d68060);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.19);
+  a {
+    text-decoration: none;
+  }
+}
+.headerLogo {
+  width: auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  padding-left: 135px;
+}
+.siteTitle {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: lighter;
+  color: white;
+  align-items: center;
+  font-family: "Great Vibes";
+  margin-left: 15px;
+  font-size: 40px;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+}
+.headerOptions {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headerOption {
+  font-family: "Marck Script";
+  padding: 10px 15px;
+  font-size: 18.5px;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  color: #ffffff;
+  background: linear-gradient(to right, #929aab, #929aab 50%, #ffffff 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  &:hover {
+    background-position: 0 100%;
+  }
+}

@@ -5,6 +5,23 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: `Cafe de la Coy`,
+    author: `Jericho Irvin`,
+  },
+  plugins: [
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Marck Script`,
+          `Great Vibes`,
+          `Roboto Slab`,
+          `Libre Baskerville\:400i`,
+        ],
+        display: `swap`,
+      },
+    },
+  ],
 }
