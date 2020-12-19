@@ -1,0 +1,27 @@
+.reservePageContainer {
+  width: 65vw;
+  margin: 50px 0 0 230px;
+  padding: 50px 0;
+  background-color: #fff;
+  border: solid black 0.5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  body {
+    background-color: indianred;
+  }
+  form {
+    display: inline-block;
+    text-align: center;
+    flex-direction: column;
+    input {
+      margin-bottom: 30px;
+      height: 35px;
+      width: 60%;
+      font-family: "Libre Baskerville";
+    }
+    input[type="submit"] {
+      height: 50px;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  }
+}
