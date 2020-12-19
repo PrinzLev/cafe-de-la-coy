@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Cafe de la Coy`,
+    title: `Cafe de L'Coy`,
     author: `Jericho Irvin`,
   },
   plugins: [

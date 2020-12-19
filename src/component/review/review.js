@@ -1,16 +1,24 @@
 import React from "react"
 import reviewStyles from "./review.module.scss"
-import YelpStars from "../../assets/yelp-stars.png"
+import BuzzFeed from "../../assets/BuzzFeed-Logo.png"
+import Delicious from "../../assets/Delicious_Logo_CS.png"
+import FoodNetwork from "../../assets/food-network.png"
+import FoodMagazine from "../../assets/food-magazine-logo.png"
+import YelpBizzie from "../../assets/yelp-bizzie.png"
+import YelpLoveUs from "../../assets/people-love-us.png"
 const ReviewComponent = () => (
   <div className={reviewStyles.reviewContainer}>
-    <h1>4.9/5 Stars in Yelp</h1>
-    <img alt="Yelp Stars" src={YelpStars} />
-    <p>
-      Highlighted Review: <br />
-      "The quality of food was superb, only slightly outmatched by the quality
-      of service they provided, not only to me but to everyone else" <br />
-      -Amster Dam
-    </p>
+    <div className={reviewStyles.featureContainer}>
+      <img src={YelpBizzie} alt="Yelp Award" />
+      <img src={YelpLoveUs} alt="Five Stars" />
+    </div>
+    <h1>Have been featured in:</h1>
+    <div className={reviewStyles.featureContainer}>
+      <img src={BuzzFeed} alt="BuzzFeed" />
+      <img src={Delicious} alt="Delicious" />
+      <img src={FoodNetwork} alt="Food Network" />
+      <img src={FoodMagazine} alt="Food Magazine" />
+    </div>
   </div>
 )
 

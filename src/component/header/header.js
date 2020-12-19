@@ -32,7 +32,7 @@ const Header = () => {
         <Link className={headerStyles.headerOption} to="/about">
           Our Team
         </Link>
-        <Link className={headerStyles.headerOption} to="/contact">
+        <Link className={headerStyles.headerOption} to="/reserve">
           Reserve Now
         </Link>
       </div>
