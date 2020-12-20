@@ -25,7 +25,11 @@ class ReservePage extends React.Component {
     const { firstName, lastName, phoneNumber, date, time } = this.state
 
     if (firstName && lastName && phoneNumber && date && time) {
-      swal("We've recieved your request", "We'll call you shortly", "success")
+      swal(
+        "We'll contact you shortly for confirmation",
+        "Thanks for choosing Cafe de L'Coy",
+        "success"
+      )
       this.setState({
         firstName: "",
         lastName: "",
@@ -44,7 +48,12 @@ class ReservePage extends React.Component {
     return (
       <Layout>
         <div className={reservePageStyle.reservePageContainer}>
-          <form onSubmit={this.handleSubmit} method="post">
+          <h1>
+            You can also contact us through <br />
+            999.999.9999, or do a walk-in reservation <br />
+            through the address below
+          </h1>
+          <form onSubmit={this.handleSubmit} method="post" autoComplete="off">
             <input
               type="text"
               name="firstName"
