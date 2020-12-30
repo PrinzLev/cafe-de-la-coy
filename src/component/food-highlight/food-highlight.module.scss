@@ -5,13 +5,13 @@
   background-image: linear-gradient(180deg, #fff, #f8f1f1, #f8f1f1, #fff);
   position: relative;
   padding-bottom: 100px;
-
+  text-align: center;
   h1 {
     text-align: center;
     font-weight: bold;
     font-size: 4rem;
     color: #1b262c;
-    margin-top: 50px;
+    margin-top: 15px;
   }
   img {
     height: 75vh;
@@ -42,36 +42,54 @@
     }
   }
   a {
-    position: absolute;
     bottom: 0px;
-    left: 50%;
-    height: 53px;
-    margin-left: -8%;
-    width: 15vw;
-    border: solid 0.5px #b88846;
     color: #b88846;
-    background-color: #fff;
-    opacity: 1;
-    padding: 6px;
-    font-size: 12px;
+    font-size: 1rem;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-family: "Roboto Slab";
     font-weight: bold;
+    background: linear-gradient(to right, #333, #333 50%, #b88846 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
     &:hover {
-      opacity: 1;
-      background-color: #b88846;
-      color: #ffff;
+      background-position: 0 100%;
     }
   }
 }
 
 hr {
-  width: 5%;
-  color: #929aab;
-  border-style: dotted hidden hidden hidden;
-  border-width: 7px;
+  border: 1px solid transparent;
+  height: 1em;
+  width: 15%;
+  position: relative;
+  &:before,
+  &:after {
+    content: " W ";
+    color: #fff;
+    font-family: Montez;
+    position: absolute;
+  }
+
+  &:before {
+    left: 0;
+    text-shadow: -1px 0px #ccc;
+    -webkit-transform: scaleX(15) scaleY(2) rotate(-90deg);
+    -moz-transform: scaleX(15) scaleY(2) rotate(-90deg);
+    -ms-transform: scaleX(15) scaleY(2) rotate(-90deg);
+    -o-transform: scaleX(15) scaleY(2) rotate(-90deg);
+    transform: scaleX(15) scaleY(2) rotate(-90deg);
+  }
+  &:after {
+    right: 0;
+    text-shadow: 1px 0px #ccc;
+    -webkit-transform: scaleX(15) scaleY(2) rotate(90deg);
+    -moz-transform: scaleX(15) scaleY(2) rotate(90deg);
+    -ms-transform: scaleX(15) scaleY(2) rotate(90deg);
+    -o-transform: scaleX(15) scaleY(2) rotate(90deg);
+    transform: scaleX(15) scaleY(2) rotate(90deg);
+  }
 }

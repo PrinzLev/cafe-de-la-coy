@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import lambchop from "../../assets/lambchop.png"
 import foodHighlightStyle from "./food-highlight.module.scss"
+
 const FoodHighlightComponent = () => (
   <div>
     <div className={foodHighlightStyle.foodHighlightContainer}>

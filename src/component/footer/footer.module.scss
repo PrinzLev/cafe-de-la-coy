@@ -1,17 +1,17 @@
 .footerContainer {
   padding: 5px;
-  background-color: #f1ae89;
+  background-color: #ffba93;
   height: 65px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 0.75rem;
   box-shadow: inset 0 10px 5px -12px #111;
-  color: #556052;
+  color: #03506f;
   z-index: 5;
   span {
-    margin: 0 5px 0 5px;
-    background: linear-gradient(to right, #ffffff, #ffffff 50%, #556052 50%);
+    margin: 0 10px 0 10px;
+    background: linear-gradient(to right, #000000, #000000 50%, #03506f 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -1,0 +1,30 @@
+.flexSection {
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  column-gap: 1rem;
+  margin-top: 50px;
+  .memberSection {
+    text-align: left;
+    font-family: "Great Vibes";
+    margin-left: 25px;
+    p {
+      font-size: 1rem;
+      margin-right: 200px;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
+}
+.img {
+  margin: 0 25px 0 25px;
+}
+.pageTitle {
+  font-size: 3rem;
+  text-align: center;
+}
