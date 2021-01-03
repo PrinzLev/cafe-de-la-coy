@@ -2,9 +2,9 @@ import React from "react"
 import Layout from "../component/layout"
 import aboutStyle from "../styles/about.module.scss"
 import Image from "gatsby-image"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 
- export const data = graphql`
+export const data = graphql`
   {
     headchef: file(relativePath: { eq: "about-page/headchef.png" }) {
       childImageSharp {
@@ -43,7 +43,7 @@ import { graphql, useStaticQuery } from "gatsby"
     }
   }
 `
-const AboutPage = ({data}) => {
+const AboutPage = ({ data }) => {
   return (
     <Layout>
       <h1 className={aboutStyle.pageTitle}>Meet Our Team</h1>

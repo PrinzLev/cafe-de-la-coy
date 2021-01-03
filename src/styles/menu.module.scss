@@ -1,0 +1,142 @@
+.page {
+  width: 90vw;
+  margin: 0 auto 2rem;
+  text-transform: capitalize;
+  max-width: 1170px;
+  font-family: "Redressed";
+  a {
+    text-decoration: none;
+    color: #333;
+    background: linear-gradient(to right, #000000, #000000 50%, #333 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    &:hover {
+      background-position: 0 100%;
+      cursor: pointer;
+    }
+  }
+
+  span {
+    margin-left: 2rem;
+    color: gray;
+  }
+
+  article {
+    margin: 2rem 0;
+  }
+  div {
+    height: 15rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Redressed";
+}
+
+.subTitle {
+  font-family: "Redressed";
+  font-size: 1rem;
+  text-decoration: none;
+
+  margin-left: 3rem;
+  color: #333;
+  display: inline-block;
+  position: relative;
+
+  &:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #333;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  &:hover:after {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.singleProduct {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto 2rem;
+  font-family: "Redressed";
+  h1 {
+    text-transform: capitalize;
+  }
+  a {
+    text-decoration: none;
+    color: #333;
+    background: linear-gradient(to right, #000000, #000000 50%, #333 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    &:hover {
+      background-position: 0 100%;
+      cursor: pointer;
+    }
+  }
+}
+.reserveLink {
+  text-decoration: none;
+  margin-left: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Redressed";
+  font-weight: bold;
+  color: #000000;
+  a {
+    background: linear-gradient(to right, #c05555, #c05555 50%, #000000 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    &:hover {
+      background-position: 0 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+.singleTitle {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Redressed";
+}
+@media screen and (min-width: 768px) {
+  .singleProduct {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+  }
+}

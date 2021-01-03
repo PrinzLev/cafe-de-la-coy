@@ -9,6 +9,7 @@
   box-shadow: inset 0 10px 5px -12px #111;
   color: #03506f;
   z-index: 5;
+  margin-top: 6rem;
   span {
     margin: 0 10px 0 10px;
     background: linear-gradient(to right, #000000, #000000 50%, #03506f 50%);
@@ -20,7 +21,7 @@
     transition: background-position 275ms ease;
     &:hover {
       background-position: 0 100%;
-      cursor: pointer;
+      cursor: default;
     }
   }
 }
