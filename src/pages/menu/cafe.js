@@ -10,6 +10,7 @@ const CafeMenuPage = () => {
     <Layout>
       <Head title="Cafe Menu" />
       <h1 className={Style.title}>Cafe Menu</h1>
+      <hr />
       <CafeMenu />
       <div className={Style.reserveLink}>
         <Link to="/reserve">Reserve Now</Link>

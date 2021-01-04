@@ -10,6 +10,7 @@ const MainMenuPage = () => {
     <Layout>
       <Head title="Primary Menu" />
       <h1 className={Style.title}>Primary Courses</h1>
+      <hr />
       <MainMenu />
       <div className={Style.reserveLink}>
         <Link to="/reserve">Reserve Now</Link>

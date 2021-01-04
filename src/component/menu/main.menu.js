@@ -21,25 +21,27 @@ const query = graphql`
     }
   }
 `
-const MainMenu = () => {
+const MainMenu = ({ preview }) => {
   const {
     allContentfulMainMenu: { nodes },
   } = useStaticQuery(query)
 
   return (
     <section className={Style.page}>
-      {nodes.map(({ image: { fluid }, title, slug, price, id }) => {
-        return (
-          <article key={id}>
-            <Image fluid={fluid}></Image>
-            <h3>
-              {" "}
-              {title} <span>${price}</span>
-            </h3>
-            <Link to={`/menu/${slug}`}>more details</Link>
-          </article>
-        )
-      })}
+      {nodes
+        .filter((item, index) => index < (preview ? 6 : 8))
+        .map(({ image: { fluid }, title, slug, price, id }) => {
+          return (
+            <article key={id}>
+              <Image fluid={fluid}></Image>
+              <h3>
+                {" "}
+                {title} <span>${price}</span>
+              </h3>
+              <Link to={`/menu/${slug}`}>more details</Link>
+            </article>
+          )
+        })}
     </section>
   )
 }

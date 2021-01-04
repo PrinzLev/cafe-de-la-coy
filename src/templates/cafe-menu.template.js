@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import MenuTemplate from "./menu-template"
+import Layout from "../component/layout"
 
 const CafeMenuTemplate = ({
   data: {
@@ -12,9 +13,9 @@ const CafeMenuTemplate = ({
     },
   },
 }) => (
-  <>
+  <Layout>
     <MenuTemplate fixed={fixed} price={price} title={title} info={info} />
-  </>
+  </Layout>
 )
 
 export const query = graphql`

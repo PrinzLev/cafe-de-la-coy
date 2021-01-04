@@ -11,14 +11,16 @@ const MenuPage = () => {
     <Layout>
       <Head title="Menu" />
       <h1 className={Style.title}>Menu</h1>
+      <hr />
       <Link className={Style.subTitle} to="/menu/main">
         <h1>Primary Course</h1>
       </Link>
-      <MainMenu />
+      <MainMenu preview />
+      <hr />
       <Link className={Style.subTitle} to="/menu/cafe">
         <h1>Cafe Menu</h1>
       </Link>
-      <CafeMenu />
+      <CafeMenu preview />
       <div className={Style.reserveLink}>
         <Link to="/reserve">Reserve Now</Link>
       </div>
