@@ -3,6 +3,7 @@ import Layout from "../component/layout"
 import aboutStyle from "../styles/about.module.scss"
 import Image from "gatsby-image"
 import { graphql } from "gatsby"
+import Head from "../component/helmet"
 
 export const data = graphql`
   {
@@ -46,6 +47,7 @@ export const data = graphql`
 const AboutPage = ({ data }) => {
   return (
     <Layout>
+      <Head title="Our Team" />
       <h1 className={aboutStyle.pageTitle}>Meet Our Team</h1>
       <div className={aboutStyle.flexSection}>
         <Image

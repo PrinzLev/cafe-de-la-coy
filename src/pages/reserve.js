@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../component/layout"
 import swal from "sweetalert"
 import reservePageStyle from "../styles/reserve.module.scss"
+import Head from "../component/helmet"
+
 class ReservePage extends React.Component {
   constructor() {
     super()
@@ -47,6 +49,7 @@ class ReservePage extends React.Component {
   render() {
     return (
       <Layout>
+        <Head title="Reserve" />
         <div className={reservePageStyle.reservePageContainer}>
           <h1>
             You can also contact us through <br />
