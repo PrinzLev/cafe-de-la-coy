@@ -7,7 +7,7 @@ import Head from "../component/helmet"
 const MenuTemplate = ({ title, fixed, price, info }) => {
   return (
     <div>
-      <Head title="Menu Item" />
+      <Head title={title.charAt(0).toUpperCase() + title.slice(1)} />
       <div className={style.singleTitle}>
         <h1> {title}</h1>
         <hr />
